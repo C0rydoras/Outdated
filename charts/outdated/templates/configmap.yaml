@@ -15,4 +15,5 @@ data:
   OIDC_OP_BASE_ENDPOINT: {{ cat .Values.oidc.host "/realms/" .Values.oidc.realm "/protocol/openid-connect" | replace " " "" | quote }}
   OIDC_CLIENT_ID: {{ .Values.oidc.clientId | quote }}
   OIDC_GROUPS_CLAIM: "groups"
+  OIDC_ADMIN_GROUP: {{ .Values.oidc.adminGroup }}
   SECRET_KEY: {{ randAscii 20 | quote }}

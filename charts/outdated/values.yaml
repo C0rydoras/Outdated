@@ -36,6 +36,7 @@ oidc:
   host: "https://login.example.com"
   clientId: "example-outdated"
   realm: "example"
+  adminGroup: "outdated-admin"
 
 postgresql:
   enabled: false
